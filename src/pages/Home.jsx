@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Row from '../../components/Row'
-import requests from '../../Requests'
+import Header from '../components/Header'
+import Row from '../components/Row'
+import requests from '../Requests'
 
 const Home = () => {
   return (

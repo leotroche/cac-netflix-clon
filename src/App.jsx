@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom"
-import Home from "./assets/pages/Home"
-import Login from "./assets/pages/Login"
-import SignUp from "./assets/pages/SignUp"
-import Account from "./assets/pages/Account"
+import Home from "./pages/Home"
+import Login from "./pages/Login"
+import SignUp from "./pages/SignUp"
+import Account from "./pages/Account"
 import Navbar from "./components/Navbar"
 import { AuthContextProvider } from "./context/AuthContext"
 

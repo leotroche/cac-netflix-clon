@@ -6,51 +6,44 @@ export const TMDB = {
     baseURL: 'https://api.themoviedb.org/3',
     params: {
       api_key: ENV.API_KEY
-      // language: 'es-MX'
-      // page: 1
     },
     timeout: 2000
   }),
 
-  /***/
-  movies: {
-    popular: '/movie/popular',
-    top_rated: '/movie/top_rated'
-  },
-  series: {
-    popular: '/tv/popular',
-    top_rated: '/tv/top_rated'
-  },
-  details: {
-    movie: '/movie/',
-    serie: '/tv/'
-  },
-  /***/
+  path: {
+    movies: {
+      popular: '/movie/popular',
+      top_rated: '/movie/top_rated',
+      upcoming: '/movie/upcoming'
+    },
 
-  images: {
-    base_url: 'https://image.tmdb.org/t/p/',
-    poster_high: 'https://image.tmdb.org/t/p/w500',
-    poster_original: 'https://image.tmdb.org/t/p/original',
-    poster_low: 'https://image.tmdb.org/t/p/w185',
-    backdrop_high: 'https://image.tmdb.org/t/p/w1280',
-    backdrop_low: 'https://image.tmdb.org/t/p/w300',
-    backdrop_original: 'https://image.tmdb.org/t/p/original',
-    sizes: {
-      poster: {
-        w92: 'w92',
-        w154: 'w154',
-        w185: 'w185',
-        w342: 'w342',
-        w500: 'w500',
-        w780: '780',
-        original: 'original'
-      },
-      backdrop: {
-        w300: 'w300',
-        w780: 'w780',
-        w1280: 'w1280',
-        original: 'original'
-      }
+    series: {
+      on_the_air: '/tv/on_the_air',
+      popular: '/tv/popular',
+      top_rated: '/tv/top_rated'
+    },
+
+    movie: {
+      details: (id) => `/movie/${id}`,
+      search: '/search/movie',
+      videos: (id) => `/movie/${id}/videos`
+    },
+
+    serie: {
+      details: (id) => `/tv/${id}`,
+      search: '/search/tv',
+      videos: (id) => `/tv/${id}/videos`
+    },
+
+    trending: '/trending/all/day',
+
+    images: {
+      poster_low: 'https://image.tmdb.org/t/p/w185',
+      poster_high: 'https://image.tmdb.org/t/p/w500',
+      poster_original: 'https://image.tmdb.org/t/p/original',
+      backdrop_low: 'https://image.tmdb.org/t/p/w300',
+      backdrop_high: 'https://image.tmdb.org/t/p/w1280',
+      backdrop_original: 'https://image.tmdb.org/t/p/original'
     }
   }
 }

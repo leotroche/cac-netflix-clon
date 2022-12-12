@@ -1,4 +1,5 @@
-const key= 'f329021f8f0cd930a63e8357a37e3abc'
+const key= import.meta.env.VITE_APP_IMDB_API_KEY
+
 
 const requests={
     requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,

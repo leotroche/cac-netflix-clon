@@ -10,6 +10,7 @@ export function AuthContextProvider({children}){
     function signUp(email, password) {
         return createUserWithEmailAndPassword(auth, email, password);
     }
+    //console.log(auth)
 
     function logIn(email, password) {
         return signInWithEmailAndPassword(auth, email, password);

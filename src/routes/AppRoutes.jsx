@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-
 import { Home, Login, Media, Details } from '../pages'
 
 export const AppRoutes = () => {

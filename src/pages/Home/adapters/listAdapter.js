@@ -1,4 +1,4 @@
-import { TMDB } from '@/api/tmdb'
+import { TMDB } from '../../../config/tmdb'
 
 export const listAdapter = (items = []) => {
   return items.map((item) => {

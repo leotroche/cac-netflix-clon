@@ -1,0 +1,7 @@
+export * from './getOnTheAirSeries'
+export * from './getPopularMovies'
+export * from './getPopularSeries'
+export * from './getTopRatedMovies'
+export * from './getTopRatedSeries'
+export * from './getTrending'
+export * from './getUpcomingMovies'

@@ -4,8 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   background-color: #000000;
   font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.radial-gradient {
+  background-image: radial-gradient(farthest-side at 73% 21%, transparent, /* #1a1d29 */ #0f1014);
+  position: absolute;
+  inset: 0;
+  z-index: -5;
+  height: 100vh;
 }
